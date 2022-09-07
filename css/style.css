@@ -10,7 +10,7 @@ html {
 }
 
 body {
-  min-width: 120rem;
+  min-width: 192rem;
   letter-spacing: 1px;
 
   font-family: sans-serif;
@@ -19,23 +19,29 @@ body {
 /* Section hero */
 
 .section-hero {
-  background-color: #fdf2e9;
-  background-image: url("../img/tech3.jpg");
+  /* background-color: #fdf2e9; */
+  background-image: linear-gradient(
+      to right,
+      rgba(0, 0, 0, 0.8),
+      rgba(0, 0, 0, 0.1),
+      rgba(0, 0, 0, 0.2)
+    ),
+    url("../img/d_01-bmw_jazda_probna_lp/hero-backgroundx2.png");
   background-size: cover;
 
-  margin: 0 1rem;
+  /* margin: 0 1rem; */
 
   height: 90vh;
 }
 
 .container-hero {
   margin: 0 auto;
-  width: 105rem;
+  width: 161rem;
   height: 100%;
 
   display: flex;
   flex-direction: column;
-  gap: 18rem;
+  gap: 25rem;
 }
 
 header {
@@ -44,15 +50,19 @@ header {
   align-items: center;
 
   width: 100%;
-  height: 7rem;
+  height: 10.6rem;
 
   position: relative;
+
+  font-weight: 700;
+
+  font-family: "Cairo", sans-serif;
 }
 
 .main-nav {
-  width: 98rem;
+  width: 152rem;
   height: 97%;
-  border-bottom: 1px solid rgba(221, 221, 221, 0.4);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
 
   display: flex;
   align-items: center;
@@ -61,47 +71,77 @@ header {
 .main-nav::after {
   content: "Radość z jazdy";
   position: absolute;
-  top: 8rem;
-  left: 87rem;
+  top: 13rem;
+  left: 140rem;
 
   color: #fff;
-  font-size: 14px;
+  font-size: 16px;
 }
 
 .main-nav-list {
   display: flex;
   align-items: center;
-  gap: 5rem;
+  gap: 8rem;
   list-style: none;
 }
 
 .main-nav-link {
   text-decoration: none;
   color: #fff;
-  font-size: 1.4rem;
-  font-weight: 600;
+  font-size: 1.8rem;
+
+  letter-spacing: 0.9;
 }
 
 .logo {
-  width: 5rem;
-  height: 5rem;
+  width: 5.3rem;
+  height: 5.3rem;
+}
+
+.ilogo {
+  margin-top: 10rem;
+  width: 8.8rem;
+  height: 4.8rem;
 }
 
 .hero-content {
   display: flex;
   flex-direction: column;
-  gap: 2rem;
+  gap: 3rem;
 }
 
 .hero-content-title {
-  font-size: 5rem;
+  font-size: 6.4rem;
   font-weight: 700;
   color: #fff;
 }
 
 .hero-content-text {
-  font-size: 13px;
+  font-size: 16px;
   color: #fff;
+  font-weight: 600;
+}
+
+.slider_and_cta {
+  width: 100rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.sliders {
+  display: flex;
+  gap: 2rem;
+}
+
+.slider {
+  width: 6rem;
+  height: 5px;
+  background-color: #fff;
+}
+
+.slider-active {
+  background-color: #3369d3;
 }
 
 .cta {
@@ -112,12 +152,14 @@ header {
 .link-cta-hero {
   text-decoration: none;
   color: #fff;
-  font-size: 14px;
+  font-size: 18px;
+  letter-spacing: 0.9;
+  font-weight: 600;
   text-transform: uppercase;
 
-  width: 30rem;
-  height: 5rem;
-  background-color: #228be6;
+  width: 37.2rem;
+  height: 6.3rem;
+  background-color: #3369d3;
 
   display: flex;
   align-items: center;
@@ -126,10 +168,10 @@ header {
 
 /* Section tech */
 .section-tech {
-  margin-top: 15rem;
+  margin-top: 20rem;
   display: flex;
   flex-direction: column;
-  gap: 5rem;
+  gap: 25rem;
 }
 
 .container-tech {
@@ -137,10 +179,10 @@ header {
 
   margin: 0 auto;
   height: 60rem;
-  width: 140rem;
+  width: 90%;
 
   display: flex;
-  gap: 7rem;
+  gap: 12rem;
 }
 
 .tech-photos {
@@ -169,8 +211,7 @@ header {
 }
 
 .tech-text {
-  width: 45%;
-  height: 100%;
+  width: 63rem;
 
   display: flex;
   flex-direction: column;
@@ -182,25 +223,32 @@ header {
 }
 
 .tech-title {
-  font-size: 2.8rem;
+  font-size: 3.6rem;
   font-weight: 700;
 }
 
 .tech-content-1 {
+  width: 80rem;
+
+  margin-top: 4rem;
+
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  row-gap: 6rem;
+  row-gap: 14rem;
 }
 
 .tech-content-box {
-  width: 90%;
+  width: 19rem;
+  height: 12rem;
+  /* width: 90%; */
   display: flex;
   flex-direction: column;
   gap: 2rem;
 }
 
 .box-number {
-  padding-bottom: 1rem;
+  padding-bottom: 1.2rem;
+  font-weight: 700;
   border-bottom: 1px solid #ddd;
   position: relative;
 }
@@ -216,7 +264,9 @@ header {
 }
 
 .box-text {
-  color: #555;
+  font-size: 14px;
+  font-weight: 400;
+  color: #4e4e4e;
   line-height: 2;
 }
 
@@ -261,7 +311,7 @@ header {
 /* Section gallery */
 
 .section-gallery {
-  margin: 2rem 0 5rem 0;
+  margin: 25rem 0 5rem 0;
 }
 
 .container-gallery {
