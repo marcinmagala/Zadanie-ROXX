@@ -16,6 +16,8 @@ body {
   font-family: sans-serif;
 }
 
+/* Section hero */
+
 .section-hero {
   background-color: #fdf2e9;
   background-image: url("../img/low-poly-grid-haikei.svg");
@@ -24,13 +26,11 @@ body {
   margin: 0 1rem;
 
   height: 90vh;
-
-  /* padding: 4.8rem 0 9.6rem 0; */
 }
 
 .container-hero {
   margin: 0 auto;
-  width: 100rem;
+  width: 105rem;
   height: 100%;
 
   display: flex;
@@ -42,7 +42,7 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  /* background-color: greenyellow; */
+
   width: 100%;
   height: 7rem;
 
@@ -50,8 +50,8 @@ header {
 }
 
 .main-nav {
-  width: 93rem;
-  height: 100%;
+  width: 98rem;
+  height: 97%;
   border-bottom: 1px solid rgba(221, 221, 221, 0.4);
 
   display: flex;
@@ -62,7 +62,7 @@ header {
   content: "Radość z jazdy";
   position: absolute;
   top: 8rem;
-  left: 83rem;
+  left: 87rem;
 
   color: #fff;
   font-size: 14px;
@@ -78,7 +78,7 @@ header {
 .main-nav-link {
   text-decoration: none;
   color: #fff;
-  font-size: 1.6rem;
+  font-size: 1.4rem;
   font-weight: 600;
 }
 
@@ -122,4 +122,138 @@ header {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+/* Section tech */
+.section-tech {
+  margin-top: 15rem;
+  display: flex;
+  flex-direction: column;
+  gap: 5rem;
+}
+
+.container-tech {
+  /* background-color: #228be6; */
+
+  margin: 0 auto;
+  height: 60rem;
+  width: 140rem;
+
+  display: flex;
+  gap: 7rem;
+}
+
+.tech-photos {
+  width: 52%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  column-gap: 1.5rem;
+
+  /* justify-items: center; */
+}
+
+.section-tech img {
+  aspect-ratio: 1/1;
+}
+
+.img-tech1 {
+  width: 100%;
+  grid-row: 2/-1;
+  transform: translateY(-75%);
+}
+
+.img-tech2 {
+  width: 90%;
+  grid-column: 2/-1;
+}
+
+.tech-text {
+  width: 45%;
+  height: 100%;
+
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.tech-icon-battery {
+  width: 3rem;
+}
+
+.tech-title {
+  font-size: 2.8rem;
+  font-weight: 700;
+}
+
+.tech-content-1 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  row-gap: 6rem;
+}
+
+.tech-content-box {
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.box-number {
+  padding-bottom: 1rem;
+  border-bottom: 1px solid #ddd;
+  position: relative;
+}
+
+.box-number::before {
+  content: "";
+  position: absolute;
+  top: 100%;
+
+  height: 1px;
+  width: 1.3rem;
+  background-color: #000;
+}
+
+.box-text {
+  color: #555;
+  line-height: 2;
+}
+
+.tech-icon-car {
+  width: 3rem;
+}
+
+.help-center {
+  /* padding-left: 17rem; */
+  padding: 0 2rem 0 17rem;
+}
+
+.img-tech3 {
+  width: 100%;
+  grid-column: 1/3;
+}
+
+.img-tech4 {
+  width: 100%;
+  transform: translateY(-25%);
+}
+
+.tech-content-2 {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+
+  margin-top: 2rem;
+
+  line-height: 1.7;
+}
+
+.tech-2-subtitle h2 {
+  color: #888;
+  font-weight: 400;
+}
+
+.tech-2-text {
+  color: #444;
 }
