@@ -25,10 +25,14 @@
     <!-- CSS files -->
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/queries.css" />
+
+    <script defer src="script.js"></script>
   </head>
   <body>
     <main>
       <section class="section-hero">
+        <div class="section-hero-background active-background"></div>
+        <div class="section-hero-background"></div>
         <div class="section-hero-background"></div>
 
         <div class="container-hero">
@@ -216,6 +220,15 @@
         </div>
       </section>
       <section class="section-form" id="section-form">
+        <div class="container-form-thx hidden-thx-form">
+          <div class="thx-content-box">
+            <span class="thx-title">Dziękujemy</span>
+            <span class="thx-text"
+              >Skontaktujemy się z Tobą w najbliższym możliwym terminie.</span
+            >
+            <button class="thx-btn">ok</button>
+          </div>
+        </div>
         <div class="container-form">
           <img
             class="background-form-1"
@@ -259,10 +272,18 @@
               <form name="contact-form">
                 <p>Wypełnij formularz swoimi danymi.</p>
                 <div>
-                  <input type="radio" name="radio" required /><label>
-                    Pan
-                  </label>
-                  <input type="radio" name="radio" required />
+                  <input
+                    class="radio-input"
+                    type="radio"
+                    name="radio"
+                    required
+                  /><label> Pan </label>
+                  <input
+                    class="radio-input"
+                    type="radio"
+                    name="radio"
+                    required
+                  />
                   <label>Pani </label>
                 </div>
 
