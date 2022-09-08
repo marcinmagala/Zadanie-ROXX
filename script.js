@@ -19,23 +19,25 @@ const ctaMobile = document.querySelector(".cta-mobile");
 
 openMobileNavBtn.addEventListener("click", function (e) {
   e.preventDefault();
-  containerMobileNav.classList.remove("hidden");
+  // containerMobileNav.classList.remove("hidden");
+  containerMobileNav.style.transform = "translateX(0)";
 });
 
 closeMobileNavBtn.addEventListener("click", function (e) {
   e.preventDefault();
-  containerMobileNav.classList.add("hidden");
+  // containerMobileNav.classList.add("hidden");
+  containerMobileNav.style.transform = "translateX(-39rem)";
 });
 
-ctaMobile.addEventListener("click", function (e) {
-  e.preventDefault();
-  containerMobileNav.classList.add("hidden");
+ctaMobile.addEventListener("click", function () {
+  // containerMobileNav.classList.add("hidden");
+  containerMobileNav.style.transform = "translateX(-39rem)";
 });
 
 mobileNavOption.forEach((btn) =>
-  btn.addEventListener("click", function (e) {
-    e.preventDefault();
-    containerMobileNav.classList.add("hidden");
+  btn.addEventListener("click", function () {
+    // containerMobileNav.classList.add("hidden");
+    containerMobileNav.style.transform = "translateX(-39rem)";
   })
 );
 

@@ -43,6 +43,9 @@ body {
   align-items: center;
 
   color: #fff;
+
+  transition: 1s;
+  transform: translateX(-39rem);
 }
 
 .mobile-nav-header {
@@ -62,6 +65,7 @@ body {
   top: 9rem;
   left: 29rem;
   stroke: #858585;
+  cursor: pointer;
 }
 
 .mobile-nav-options {
@@ -529,6 +533,8 @@ header {
   text-transform: uppercase;
 
   cursor: pointer;
+
+  border: none;
 }
 
 .container-form {
@@ -731,6 +737,7 @@ footer {
 
 a {
   text-decoration: none;
+  transition: 0.2s;
 }
 
 .footer-content {
