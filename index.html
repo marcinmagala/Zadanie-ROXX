@@ -29,27 +29,31 @@
   <body>
     <main>
       <section class="section-hero">
+        <div class="section-hero-background"></div>
+
         <div class="container-hero">
           <header class="header">
             <nav class="main-nav">
               <ul class="main-nav-list">
-                <li><a class="main-nav-link" href="#how">Nowe BMW iX</a></li>
+                <li><a class="main-nav-link" href="#">Nowe BMW iX</a></li>
                 <li>
-                  <a class="main-nav-link" href="#meals">Umów jazdę próbną</a>
+                  <a class="main-nav-link" href="#section-form"
+                    >Umów jazdę próbną</a
+                  >
                 </li>
               </ul>
             </nav>
 
             <img
               class="logo"
-              alt=""
+              alt="logo BMW"
               src="img/d_01-bmw_jazda_probna_lp/bmw_logo.svg"
             />
           </header>
           <div class="hero-content">
             <img
               class="ilogo"
-              alt=""
+              alt="Logo iX"
               src="img/d_01-bmw_jazda_probna_lp/bmw_i_logo.svg"
             />
 
@@ -63,7 +67,9 @@
               <span class="slider"></span>
             </div>
             <div class="cta">
-              <a class="link-cta-hero" href="#how">Umów jazdę próbną</a>
+              <a class="link-cta-hero" href="#section-form"
+                >Umów jazdę próbną</a
+              >
             </div>
           </div>
         </div>
@@ -86,7 +92,7 @@
             <div class="tech-icon">
               <img
                 class="tech-icon-battery"
-                src="img/battery-charging-outline.svg"
+                src="img/d_01-bmw_jazda_probna_lp/ico_1.svg"
                 alt="icon-battery"
               />
             </div>
@@ -132,7 +138,7 @@
             <div class="tech-icon">
               <img
                 class="tech-icon-car"
-                src="img/car-sport-outline.svg"
+                src="img/d_01-bmw_jazda_probna_lp/ico_2.svg"
                 alt="car-icon"
               />
             </div>
@@ -181,35 +187,35 @@
             class="gallery-img"
             id="gallery-img-1"
             src="img/d_01-bmw_jazda_probna_lp/img-gallery-1.png"
-            alt="BMW iX inside"
+            alt="BMW iX inside view"
           />
           <img
             class="gallery-img"
             id="gallery-img-2"
             src="img/d_01-bmw_jazda_probna_lp/img-gallery-2.png"
-            alt="BMW iX outside"
+            alt="BMW iX outside view"
           />
           <img
             class="gallery-img"
             id="gallery-img-3"
             src="img/d_01-bmw_jazda_probna_lp/hero-backgroundx2.png"
-            alt="BMW iX outside"
+            alt="BMW iX outside view"
           />
           <img
             class="gallery-img"
             id="gallery-img-4"
             src="img/d_01-bmw_jazda_probna_lp/img-gallery-4.png"
-            alt="BMW iX inside"
+            alt="BMW iX inside view"
           />
           <img
             class="gallery-img"
             id="gallery-img-5"
             src="img/d_01-bmw_jazda_probna_lp/img-gallery-5.png"
-            alt="BMW iX outside"
+            alt="BMW iX outside view"
           />
         </div>
       </section>
-      <section class="section-form">
+      <section class="section-form" id="section-form">
         <div class="container-form">
           <img
             class="background-form-1"
@@ -253,8 +259,11 @@
               <form name="contact-form">
                 <p>Wypełnij formularz swoimi danymi.</p>
                 <div>
-                  <input type="radio" name="radio" /><label> Pan </label>
-                  <input type="radio" name="radio" /> <label>Pani </label>
+                  <input type="radio" name="radio" required /><label>
+                    Pan
+                  </label>
+                  <input type="radio" name="radio" required />
+                  <label>Pani </label>
                 </div>
 
                 <input
@@ -367,4 +376,12 @@
   </body>
 </html>
 
-<!-- Slider w herosection można oblecieć przez img z position absolute zamiast background image -->
+<!-- 
+  1. Ogarnąć slider - dołożyć jeszce dwa takie same divy i napisać funkcję w JS która będzie przessować obrazki (dodawać styl transform:translateX). Każdy div musi mieć styl transition żeby przesówało się płynnie.
+
+  2. Animacje hover na przyciskach i linkach.
+
+  3. Widok mobilny i całe RWD - menu dla wioku mobilnego.
+
+  4. Ekran po wysłaniu formularza.
+-->

@@ -24,6 +24,17 @@ body {
 .section-hero {
   width: 192rem;
 
+  height: 90rem;
+
+  position: relative;
+}
+
+.section-hero-background {
+  position: absolute;
+  width: 192rem;
+  height: 90rem;
+  z-index: -1;
+
   background-image: linear-gradient(
       to right,
       rgba(0, 0, 0, 0.8),
@@ -32,10 +43,9 @@ body {
     ),
     url("../img/d_01-bmw_jazda_probna_lp/hero-backgroundx2.png");
   background-size: cover;
-
-  /* margin: 0 1rem; */
-
-  height: 90rem;
+  /* dorobić jeszcze dwa obrazki i funkcje w JS która co 7 sekund zamienia obrazki
+  transition: 2s;
+  transform: translateX(192rem); */
 }
 
 .container-hero {
@@ -45,7 +55,7 @@ body {
 
   display: flex;
   flex-direction: column;
-  /* justify-content: space-between; */
+
   gap: 17rem;
 }
 
@@ -281,7 +291,7 @@ header {
 }
 
 .tech-icon-car {
-  width: 3rem;
+  width: 5rem;
 }
 
 .help-center {
@@ -336,6 +346,7 @@ header {
 
 .section-gallery {
   margin-top: 25rem;
+  margin-bottom: 15rem;
 }
 
 .container-gallery {
@@ -387,7 +398,7 @@ header {
   /* background-image: url("../img/temp_image_form.svg"); */
   /* background-size: cover; */
 
-  margin-top: 15rem;
+  /* margin-top: 15rem; */
 
   display: flex;
   justify-content: center;
@@ -601,7 +612,7 @@ footer {
 
   display: flex;
   flex-direction: column;
-  gap: 2rem;
+  gap: 3rem;
 }
 
 .footer-content-box-title {
