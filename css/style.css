@@ -114,6 +114,15 @@ header {
   letter-spacing: 0.9;
 }
 
+.mobile-nav {
+  display: none;
+}
+
+.mobile-nav-btn {
+  width: 5.3rem;
+  stroke: #fff;
+}
+
 .logo {
   width: 5.3rem;
   height: 5.3rem;
@@ -205,6 +214,7 @@ header {
 
   display: flex;
   justify-content: center;
+
   gap: 15rem;
 }
 
@@ -485,6 +495,10 @@ header {
   z-index: -1;
 }
 
+.mobile {
+  display: none;
+}
+
 .background-form-1 {
   width: 44.6rem;
   height: 42.6rem;
@@ -711,6 +725,6 @@ footer {
   color: #4e4e4e;
 }
 
-.hidden-thx-form {
+.hidden {
   display: none;
 }

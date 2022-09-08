@@ -11,9 +11,9 @@ const containerFormThx = document.querySelector(".container-form-thx");
 const inputs = document.querySelectorAll("input");
 const radioInput = document.querySelectorAll(".radio-input");
 
-formBtn.addEventListener("click", function (e) {
+formBtn.addEventListener("submit", function (e) {
   e.preventDefault();
-  containerFormThx.classList.remove("hidden-thx-form");
+  containerFormThx.classList.remove("hidden");
 
   inputs.forEach((item) => (item.value = ""));
   radioInput.forEach((item) => (item.checked = ""));
@@ -21,5 +21,5 @@ formBtn.addEventListener("click", function (e) {
 
 thxBtn.addEventListener("click", function (e) {
   e.preventDefault();
-  containerFormThx.classList.add("hidden-thx-form");
+  containerFormThx.classList.add("hidden");
 });
