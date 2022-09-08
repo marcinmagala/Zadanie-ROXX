@@ -11,7 +11,35 @@ const containerFormThx = document.querySelector(".container-form-thx");
 const inputs = document.querySelectorAll("input");
 const radioInput = document.querySelectorAll(".radio-input");
 
-formBtn.addEventListener("submit", function (e) {
+const containerMobileNav = document.querySelector(".container-mobile-nav");
+const openMobileNavBtn = document.querySelector(".open-mobile-nav-btn");
+const closeMobileNavBtn = document.querySelector(".close-mobile-nav-btn");
+const mobileNavOption = document.querySelectorAll(".mobile-nav-option");
+const ctaMobile = document.querySelector(".cta-mobile");
+
+openMobileNavBtn.addEventListener("click", function (e) {
+  e.preventDefault();
+  containerMobileNav.classList.remove("hidden");
+});
+
+closeMobileNavBtn.addEventListener("click", function (e) {
+  e.preventDefault();
+  containerMobileNav.classList.add("hidden");
+});
+
+ctaMobile.addEventListener("click", function (e) {
+  e.preventDefault();
+  containerMobileNav.classList.add("hidden");
+});
+
+mobileNavOption.forEach((btn) =>
+  btn.addEventListener("click", function (e) {
+    e.preventDefault();
+    containerMobileNav.classList.add("hidden");
+  })
+);
+
+formBtn.addEventListener("click", function (e) {
   e.preventDefault();
   containerFormThx.classList.remove("hidden");
 

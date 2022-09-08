@@ -31,6 +31,43 @@
   <body>
     <main>
       <section class="section-hero">
+        <div class="container-mobile-nav hidden">
+          <div class="mobile-nav-header">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              class="close-mobile-nav-btn"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M6 18L18 6M6 6l12 12"
+              />
+            </svg>
+
+            <img
+              class="logo"
+              alt="logo BMW"
+              src="img/d_01-bmw_jazda_probna_lp/bmw_logo.svg"
+            />
+          </div>
+          <nav class="mobile-nav-options">
+            <a class="mobile-nav-option" href="#noweBMW">NOWE BMW iX.</a>
+            <a class="mobile-nav-option option-2" href="#aero"
+              >INNOWACYJNA AERODYNAMIKA
+            </a>
+
+            <a class="mobile-nav-option" href="#gallery">GALERIA</a>
+          </nav>
+          <div class="cta cta-mobile">
+            <a class="link-cta-hero link-cta-hero-mobile" href="#section-form"
+              >Umów jazdę próbną</a
+            >
+          </div>
+        </div>
         <div class="section-hero-background active-background"></div>
         <!-- <div class="section-hero-background"></div>
         <div class="section-hero-background"></div> -->
@@ -44,7 +81,7 @@
                 viewBox="0 0 24 24"
                 stroke-width="1.5"
                 stroke="currentColor"
-                class="mobile-nav-btn"
+                class="open-mobile-nav-btn"
               >
                 <path
                   stroke-linecap="round"
@@ -77,8 +114,8 @@
               src="img/d_01-bmw_jazda_probna_lp/bmw_i_logo.svg"
             />
 
-            <span class="hero-content-title">NOWE BMW iX</span>
-            <span class="hero-content-text">PIONIER NOWEJ ERY.</span>
+            <a class="hero-content-title" href="#noweBMW">NOWE BMW iX</a>
+            <a class="hero-content-text" href="#aero">PIONIER NOWEJ ERY.</a>
           </div>
           <div class="slider_and_cta">
             <div class="sliders">
@@ -94,7 +131,7 @@
           </div>
         </div>
       </section>
-      <section class="section-tech">
+      <section class="section-tech" id="noweBMW">
         <div class="container-tech">
           <div class="tech-photos">
             <img
@@ -153,7 +190,7 @@
             </div>
           </div>
         </div>
-        <div class="container-tech container-tech-2">
+        <div class="container-tech container-tech-2" id="aero">
           <div class="tech-text help-center">
             <div class="tech-icon">
               <img
@@ -201,7 +238,7 @@
           </div>
         </div>
       </section>
-      <section class="section-gallery">
+      <section class="section-gallery" id="gallery">
         <div class="container-gallery">
           <img
             class="gallery-img"
@@ -432,7 +469,11 @@
 
   2. Animacje hover na przyciskach i linkach.
 
-  3. Widok mobilny i całe RWD - menu dla wioku mobilnego.
+  3. Nawigacja dla wioku mobilnego.
 
-  4. Ekran po wysłaniu formularza.
+  4. Sprawdzić na telefonie czy działa formularz kontaktowy.
+
+  5.Wyśrodkować body dla wiekszych ekranów - body{margin:0 auto;}
+
+  
 -->
