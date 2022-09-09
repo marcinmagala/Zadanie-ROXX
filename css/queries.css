@@ -13,13 +13,7 @@
 
   .section-hero-background {
     width: 300vw;
-    /* background-image: linear-gradient(
-        to right,
-        rgba(0, 0, 0, 0.8),
-        rgba(0, 0, 0, 0.1),
-        rgba(0, 0, 0, 0.2)
-      ),
-      url("../img/d_01-bmw_jazda_probna_lp/slider1@2x-mobile-0.png"); */
+
     display: flex;
   }
   .backround-box {

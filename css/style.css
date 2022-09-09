@@ -99,21 +99,12 @@ body {
   padding: 4rem;
 }
 
-/* Hero content */
+/* Hero background*/
 .section-hero-background {
   position: absolute;
-  /* width: 192rem; */
+
   width: 576rem;
   height: 90rem;
-
-  /* background-image: linear-gradient(
-      to right,
-      rgba(0, 0, 0, 0.8),
-      rgba(0, 0, 0, 0.1),
-      rgba(0, 0, 0, 0.2)
-    ),
-    url("../img/d_01-bmw_jazda_probna_lp/hero-background-0.png");
-  background-size: cover; */
 
   z-index: -1;
 
@@ -163,6 +154,7 @@ body {
   background-size: cover;
 }
 
+/* Hero content */
 .container-hero {
   margin: 0 auto;
   width: 136rem;
@@ -487,6 +479,12 @@ header {
 .gallery-img {
   max-width: 100%;
   align-self: stretch;
+
+  transition: 0.2s;
+}
+
+.gallery-img:hover {
+  transform: scale(1.017);
 }
 
 #gallery-img-1 {
