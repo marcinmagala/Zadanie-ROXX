@@ -55,7 +55,6 @@
             />
           </div>
           <nav class="mobile-nav-options">
-            <!-- <a class="mobile-nav-option" href="#noweBMW">NOWE BMW iX.</a> -->
             <a class="mobile-nav-option" href="#noweBMW">Nowe BMW iX</a>
             <a class="mobile-nav-option option-2" href="#aero"
               >INNOWACYJNA AERODYNAMIKA
@@ -69,9 +68,7 @@
             >
           </div>
         </div>
-        <div class="section-hero-background active-background"></div>
-        <!-- <div class="section-hero-background"></div>
-        <div class="section-hero-background"></div> -->
+        <div class="section-hero-background"></div>
 
         <div class="container-hero">
           <header class="header">
@@ -122,9 +119,9 @@
           </div>
           <div class="slider_and_cta">
             <div class="sliders">
-              <span class="slider slider-active"></span>
-              <span class="slider"></span>
-              <span class="slider"></span>
+              <span class="slider slider-active" data-id="0"></span>
+              <span class="slider" data-id="1"></span>
+              <span class="slider" data-id="2"></span>
             </div>
             <div class="cta">
               <a class="link-cta-hero" href="#section-form"
@@ -344,15 +341,17 @@
                     class="radio-input"
                     type="radio"
                     name="radio"
+                    id="pan"
                     required
-                  /><label> Pan </label>
+                  /><label for="pan"> Pan </label>
                   <input
                     class="radio-input"
                     type="radio"
                     name="radio"
+                    id="pani"
                     required
                   />
-                  <label>Pani </label>
+                  <label for="pani">Pani </label>
                 </div>
 
                 <input
@@ -468,15 +467,15 @@
 </html>
 
 <!-- 
-  1. Ogarnąć slider - dołożyć jeszce dwa takie same divy i napisać funkcję w JS która będzie przessować obrazki (dodawać styl transform:translateX). Każdy div musi mieć styl transition żeby przesówało się płynnie.
+  
 
   2. Animacje hover na przyciskach i linkach.
 
-  3. Nawigacja dla wioku mobilnego.
+  
 
   4. Sprawdzić na telefonie czy działa formularz kontaktowy.
 
-  5.Wyśrodkować body dla wiekszych ekranów - body{margin:0 auto;}
+  
 
   
 -->

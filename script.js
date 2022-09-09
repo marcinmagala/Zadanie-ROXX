@@ -1,46 +1,95 @@
 "use strict";
 
+// Hero-section slider
 const sliderContainer = document.querySelector(".slider-container");
-const sectionHeroBackground = document.querySelectorAll(
+const sectionHeroBackground = document.querySelector(
   ".section-hero-background"
 );
+const slider = document.querySelectorAll(".slider");
 
+let i = 0;
+const time = 7000;
+
+slider.forEach((item) =>
+  item.addEventListener("click", function (e) {
+    e.preventDefault();
+    i === e.target.dataset.id;
+    changeImg();
+  })
+);
+
+const sliderSpan = function () {
+  slider.forEach((item) => (item.style.backgroundColor = "#fff"));
+  slider[i].style.backgroundColor = "#3369d3";
+};
+
+const changeImg = function () {
+  if (window.innerWidth > 496) {
+    sectionHeroBackground.style.backgroundImage = `linear-gradient(
+    to right,
+    rgba(0, 0, 0, 0.8),
+    rgba(0, 0, 0, 0.1),
+    rgba(0, 0, 0, 0.2)
+  ),
+  url("../img/d_01-bmw_jazda_probna_lp/hero-background-${i}.png")`;
+  } else {
+    sectionHeroBackground.style.backgroundImage = `linear-gradient(
+      to right,
+      rgba(0, 0, 0, 0.8),
+      rgba(0, 0, 0, 0.1),
+      rgba(0, 0, 0, 0.2)
+    ),
+    url("../img/d_01-bmw_jazda_probna_lp/slider1@2x-mobile-${i}.png")`;
+  }
+
+  sliderSpan();
+
+  if (i < 2) {
+    i++;
+  } else {
+    i = 0;
+  }
+};
+
+setInterval("changeImg()", time);
+
+// Form elements
 const thxBtn = document.querySelector(".thx-btn");
 const formBtn = document.querySelector(".form-btn");
 const containerFormThx = document.querySelector(".container-form-thx");
 const inputs = document.querySelectorAll("input");
 const radioInput = document.querySelectorAll(".radio-input");
 
+// Mobile nav elements
 const containerMobileNav = document.querySelector(".container-mobile-nav");
 const openMobileNavBtn = document.querySelector(".open-mobile-nav-btn");
 const closeMobileNavBtn = document.querySelector(".close-mobile-nav-btn");
 const mobileNavOption = document.querySelectorAll(".mobile-nav-option");
 const ctaMobile = document.querySelector(".cta-mobile");
 
+// Mobile navigation
 openMobileNavBtn.addEventListener("click", function (e) {
   e.preventDefault();
-  // containerMobileNav.classList.remove("hidden");
   containerMobileNav.style.transform = "translateX(0)";
 });
 
 closeMobileNavBtn.addEventListener("click", function (e) {
   e.preventDefault();
-  // containerMobileNav.classList.add("hidden");
+
   containerMobileNav.style.transform = "translateX(-39rem)";
 });
 
 ctaMobile.addEventListener("click", function () {
-  // containerMobileNav.classList.add("hidden");
   containerMobileNav.style.transform = "translateX(-39rem)";
 });
 
 mobileNavOption.forEach((btn) =>
   btn.addEventListener("click", function () {
-    // containerMobileNav.classList.add("hidden");
     containerMobileNav.style.transform = "translateX(-39rem)";
   })
 );
 
+// Form buttons
 formBtn.addEventListener("click", function (e) {
   e.preventDefault();
   containerFormThx.classList.remove("hidden");
