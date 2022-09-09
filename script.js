@@ -24,22 +24,13 @@ const sliderSpan = function () {
 };
 
 const changeImg = function () {
-  if (window.innerWidth > 496) {
-    sectionHeroBackground.style.backgroundImage = `linear-gradient(
-    to right,
-    rgba(0, 0, 0, 0.8),
-    rgba(0, 0, 0, 0.1),
-    rgba(0, 0, 0, 0.2)
-  ),
-  url("../img/d_01-bmw_jazda_probna_lp/hero-background-${i}.png")`;
+  console.log(sectionHeroBackground.clientWidth);
+  if (sectionHeroBackground.clientWidth > 1488) {
+    sectionHeroBackground.style.transform = `translateX(${i * -192}rem)`;
   } else {
-    sectionHeroBackground.style.backgroundImage = `linear-gradient(
-      to right,
-      rgba(0, 0, 0, 0.8),
-      rgba(0, 0, 0, 0.1),
-      rgba(0, 0, 0, 0.2)
-    ),
-    url("../img/d_01-bmw_jazda_probna_lp/slider1@2x-mobile-${i}.png")`;
+    sectionHeroBackground.style.transform = `translateX(${
+      (i * -sectionHeroBackground.clientWidth) / 3
+    }px)`;
   }
 
   sliderSpan();
