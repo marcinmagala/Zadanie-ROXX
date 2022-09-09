@@ -23,15 +23,31 @@ const sliderSpan = function () {
   slider[i].style.backgroundColor = "#3369d3";
 };
 
+// const changeImg = function () {
+//   console.log(sectionHeroBackground.clientWidth);
+//   if (sectionHeroBackground.clientWidth > 1488) {
+//     sectionHeroBackground.style.transform = `translateX(${i * -192}rem)`;
+//   } else {
+//     sectionHeroBackground.style.transform = `translateX(${
+//       (i * -sectionHeroBackground.clientWidth) / 3
+//     }px)`;
+//   }
+
+//   sliderSpan();
+
+//   if (i < 2) {
+//     i++;
+//   } else {
+//     i = 0;
+//   }
+// };
+
 const changeImg = function () {
   console.log(sectionHeroBackground.clientWidth);
-  if (sectionHeroBackground.clientWidth > 1488) {
-    sectionHeroBackground.style.transform = `translateX(${i * -192}rem)`;
-  } else {
-    sectionHeroBackground.style.transform = `translateX(${
-      (i * -sectionHeroBackground.clientWidth) / 3
-    }px)`;
-  }
+
+  sectionHeroBackground.style.transform = `translateX(${
+    (i * -sectionHeroBackground.clientWidth) / 3
+  }px)`;
 
   sliderSpan();
 

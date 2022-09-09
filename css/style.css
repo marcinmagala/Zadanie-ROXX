@@ -91,6 +91,8 @@ body {
 .open-mobile-nav-btn {
   width: 5.3rem;
   stroke: #fff;
+
+  cursor: pointer;
 }
 
 .option-2 {
