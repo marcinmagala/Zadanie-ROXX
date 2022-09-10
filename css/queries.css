@@ -23,6 +23,11 @@
 
   .container-hero {
     width: 80%;
+    gap: 9rem;
+  }
+
+  .hero-content {
+    gap: 0rem;
   }
 
   .main-nav::after {
@@ -31,6 +36,7 @@
 
   .slider_and_cta {
     width: 100%;
+    margin-top: 7rem;
   }
   .section-tech {
     margin-top: 15rem;
@@ -202,6 +208,7 @@
 
   .hero-content {
     width: 17rem;
+    gap: 3rem;
   }
 
   .hero-content-title {
@@ -215,7 +222,7 @@
     justify-content: center;
     gap: 2rem;
     grid-template-rows: repeat(2, 1fr);
-    margin-top: 12rem;
+    margin-top: 7rem;
   }
 
   .sliders {
@@ -431,6 +438,10 @@
 }
 
 @media (max-width: 31em) {
+  .slider_and_cta {
+    margin-top: 12rem;
+  }
+
   .section-tech {
     row-gap: 50rem;
   }
