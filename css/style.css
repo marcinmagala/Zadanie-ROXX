@@ -69,6 +69,12 @@ body {
   left: 29rem;
   stroke: #858585;
   cursor: pointer;
+
+  transition: 0.2s;
+}
+
+.close-mobile-nav-btn:hover {
+  stroke: #eee;
 }
 
 .mobile-nav-options {
@@ -82,6 +88,12 @@ body {
   font-size: 16px;
   font-weight: 400;
   color: #fff;
+
+  transition: 0.2s;
+}
+
+.mobile-nav-option:hover {
+  color: #3369d3;
 }
 
 .mobile-nav {
@@ -93,6 +105,12 @@ body {
   stroke: #fff;
 
   cursor: pointer;
+
+  transition: 0.2s;
+}
+
+.open-mobile-nav-btn:hover {
+  transform: scale(1.1);
 }
 
 .option-2 {

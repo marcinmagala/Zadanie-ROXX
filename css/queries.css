@@ -5,10 +5,7 @@
 
   .section-hero {
     width: 100%;
-  }
-
-  .section-hero-background {
-    width: 100%;
+    overflow-x: hidden;
   }
 
   .section-hero-background {
