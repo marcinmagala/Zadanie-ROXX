@@ -19,8 +19,10 @@ slider.forEach((item) =>
 );
 
 const sliderSpan = function () {
-  slider.forEach((item) => (item.style.backgroundColor = "#fff"));
-  slider[i].style.backgroundColor = "#3369d3";
+  slider.forEach(
+    (item) => (item.style.backgroundColor = "var(--unnamed-color-ffffff)")
+  );
+  slider[i].style.backgroundColor = "var(--bmw-blue)";
 };
 
 const changeImg = function () {

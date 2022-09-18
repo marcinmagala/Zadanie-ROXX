@@ -1,3 +1,14 @@
+/* Variables */
+:root {
+  --bmw-blue: #3369d3;
+
+  --unnamed-color-000000: #000000;
+  --unnamed-color-ffffff: #ffffff;
+  --unnamed-color-707070: #707070;
+  --unnamed-color-4e4e4e: #4e4e4e;
+}
+/* Colors */
+
 /* Global styles */
 * {
   margin: 0;
@@ -37,7 +48,7 @@ body {
   z-index: 99;
   width: 39rem;
   height: 100vh;
-  background-color: #000;
+  background-color: var(--unnamed-color-000000);
   padding: 3rem;
 
   display: flex;
@@ -45,7 +56,7 @@ body {
   justify-content: space-between;
   align-items: center;
 
-  color: #fff;
+  color: var(--unnamed-color-ffffff);
 
   transition: 1s;
   transform: translateX(-39rem);
@@ -87,13 +98,13 @@ body {
 .mobile-nav-option {
   font-size: 16px;
   font-weight: 400;
-  color: #fff;
+  color: var(--unnamed-color-ffffff);
 
   transition: 0.2s;
 }
 
 .mobile-nav-option:hover {
-  color: #3369d3;
+  color: var(--bmw-blue);
 }
 
 .mobile-nav {
@@ -102,7 +113,7 @@ body {
 
 .open-mobile-nav-btn {
   width: 5.3rem;
-  stroke: #fff;
+  stroke: var(--unnamed-color-ffffff);
 
   cursor: pointer;
 
@@ -217,7 +228,7 @@ header {
   top: 13rem;
   left: 116rem;
 
-  color: #fff;
+  color: var(--unnamed-color-ffffff);
   font-size: 16px;
 }
 
@@ -230,14 +241,14 @@ header {
 
 .main-nav-link {
   text-decoration: none;
-  color: #fff;
+  color: var(--unnamed-color-ffffff);
   font-size: 1.8rem;
 
   letter-spacing: 0.9;
 }
 
 .main-nav-link:hover {
-  color: #3369d3;
+  color: var(--bmw-blue);
 }
 
 .logo {
@@ -260,12 +271,12 @@ header {
 .hero-content-title {
   font-size: 6.4rem;
   font-weight: 700;
-  color: #fff;
+  color: var(--unnamed-color-ffffff);
 }
 
 .hero-content-text {
   font-size: 16px;
-  color: #fff;
+  color: var(--unnamed-color-ffffff);
   font-weight: 600;
 }
 
@@ -284,12 +295,12 @@ header {
 .slider {
   width: 6rem;
   height: 5px;
-  background-color: #fff;
+  background-color: var(--unnamed-color-ffffff);
   cursor: pointer;
 }
 
 .slider-active {
-  background-color: #3369d3;
+  background-color: var(--bmw-blue);
 }
 
 .cta {
@@ -299,7 +310,7 @@ header {
 
 .link-cta-hero {
   text-decoration: none;
-  color: #fff;
+  color: var(--unnamed-color-ffffff);
   font-size: 18px;
   letter-spacing: 0.9;
   font-weight: 600;
@@ -307,8 +318,8 @@ header {
 
   width: 37.2rem;
   height: 6.3rem;
-  background-color: #3369d3;
-  border: 3px solid #3369d3;
+  background-color: var(--bmw-blue);
+  border: 3px solid var(--bmw-blue);
 
   display: flex;
   align-items: center;
@@ -318,8 +329,8 @@ header {
 }
 
 .link-cta-hero:hover {
-  background-color: #fff;
-  color: #000;
+  background-color: var(--unnamed-color-ffffff);
+  color: var(--unnamed-color-000000);
   font-weight: 700;
 }
 
@@ -417,13 +428,13 @@ header {
 
   height: 1px;
   width: 1.3rem;
-  background-color: #000;
+  background-color: var(--unnamed-color-000000);
 }
 
 .box-text {
   font-size: 14px;
   font-weight: 400;
-  color: #4e4e4e;
+  color: var(--unnamed-color-4e4e4e);
   line-height: 2;
 }
 
@@ -468,14 +479,14 @@ header {
 
 .tech-2-subtitle h2 {
   font-size: 2rem;
-  color: #707070;
+  color: var(--unnamed-color-707070);
   font-weight: 300;
 }
 
 .tech-2-text {
   font-size: 14px;
   font-weight: 500;
-  color: #4e4e4e;
+  color: var(--unnamed-color-4e4e4e);
 }
 
 /* Section gallery */
@@ -563,7 +574,7 @@ header {
   width: 26.9rem;
 
   font-family: "Cairo", sans-serif;
-  color: #fff;
+  color: var(--unnamed-color-ffffff);
 }
 
 .thx-title {
@@ -585,9 +596,9 @@ header {
 .thx-btn {
   width: 13.8rem;
   height: 4.6rem;
-  background-color: #3369d3;
+  background-color: var(--bmw-blue);
 
-  color: #fff;
+  color: var(--unnamed-color-ffffff);
   font-size: 14px;
   letter-spacing: 0.7;
   font-weight: 500;
@@ -604,9 +615,9 @@ header {
 
   width: 81.2rem;
   height: 99.9rem;
-  background-color: #fff;
+  background-color: var(--unnamed-color-ffffff);
 
-  box-shadow: 3px 3px 60px #00000012;
+  box-shadow: 3px 3px 60px var(--unnamed-color-000000) 00012;
 
   position: relative;
 }
@@ -664,7 +675,7 @@ header {
 
 h3 {
   letter-spacing: 0;
-  color: #000;
+  color: var(--unnamed-color-000000);
   font-size: 3.2rem;
   font-weight: 700;
 }
@@ -681,7 +692,7 @@ h3 {
   font-family: "Open Sans", sans-serif;
   font-size: 1.8rem;
   font-weight: 300;
-  color: #707070;
+  color: var(--unnamed-color-707070);
 }
 
 .form-box-form {
@@ -704,7 +715,7 @@ h3 {
   align-items: center;
 
   font-size: 2rem;
-  color: #707070;
+  color: var(--unnamed-color-707070);
 }
 
 .form-box-form form div input {
@@ -722,7 +733,7 @@ h3 {
   height: 5rem;
   padding-left: 2rem;
 
-  border: 1px solid #70707025;
+  border: 1px solid var(--unnamed-color-707070) 25;
 
   font-size: 14px;
 }
@@ -737,12 +748,12 @@ label,
   height: 6rem;
   margin-top: 3rem;
 
-  background-color: #3369d3;
-  border: 2px solid #3369d3;
+  background-color: var(--bmw-blue);
+  border: 2px solid var(--bmw-blue);
 
   font-size: 18px;
   font-weight: 500;
-  color: #fff;
+  color: var(--unnamed-color-ffffff);
 
   cursor: pointer;
 
@@ -750,8 +761,8 @@ label,
 }
 
 .form-btn:hover {
-  background-color: #fff;
-  color: #000;
+  background-color: var(--unnamed-color-ffffff);
+  color: var(--unnamed-color-000000);
 }
 
 /* Footer */
@@ -790,7 +801,7 @@ footer {
 
 .social_links p {
   font-size: 2.4rem;
-  color: #707070;
+  color: var(--unnamed-color-707070);
   font-weight: 300;
 }
 
@@ -823,7 +834,7 @@ a {
 .footer-content-box-title {
   font-size: 2rem;
   font-weight: 300;
-  color: #707070;
+  color: var(--unnamed-color-707070);
 }
 
 .footer-content-box-links {
@@ -835,13 +846,13 @@ a {
 .footer-content-box-links a {
   font-size: 14px;
   font-weight: 700;
-  color: #707070;
+  color: var(--unnamed-color-707070);
 
   cursor: pointer;
 }
 
 .footer-content-box-links a:hover {
-  color: #3369d3;
+  color: var(--bmw-blue);
 }
 
 /* Copyright section */
@@ -856,7 +867,7 @@ a {
 
   font-size: 14px;
   font-weight: 500;
-  color: #4e4e4e;
+  color: var(--unnamed-color-4e4e4e);
 }
 
 /* Helper classes */
