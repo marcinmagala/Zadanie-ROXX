@@ -26,8 +26,6 @@ const sliderSpan = function () {
 };
 
 const changeImg = function () {
-  console.log(sectionHeroBackground.clientWidth);
-
   sectionHeroBackground.style.transform = `translateX(${
     (i * -sectionHeroBackground.clientWidth) / 3
   }px)`;
@@ -47,8 +45,11 @@ setInterval("changeImg()", time);
 const thxBtn = document.querySelector(".thx-btn");
 const formBtn = document.querySelector(".form-btn");
 const containerFormThx = document.querySelector(".container-form-thx");
-const inputs = document.querySelectorAll("input");
+const dataInputs = document.querySelectorAll(".data-input");
+const radioDiv = document.querySelector(".radio-div");
 const radioInput = document.querySelectorAll(".radio-input");
+const inputPan = document.querySelector(".pan");
+const inputPani = document.querySelector(".pani");
 
 // Mobile nav elements
 const containerMobileNav = document.querySelector(".container-mobile-nav");
@@ -80,12 +81,49 @@ mobileNavOption.forEach((btn) =>
 );
 
 // Form buttons
-formBtn.addEventListener("click", function (e) {
-  e.preventDefault();
-  containerFormThx.classList.remove("hidden");
 
-  inputs.forEach((item) => (item.value = ""));
-  radioInput.forEach((item) => (item.checked = ""));
+radioInput.forEach((radio) =>
+  radio.addEventListener("change", (e) => {
+    e.preventDefault();
+    radioDiv.classList.remove("error_input");
+  })
+);
+
+dataInputs.forEach((input) => {
+  input.addEventListener("change", (event) => {
+    event.preventDefault();
+    if (input.value !== "") {
+      input.classList.remove("error_input");
+    }
+  });
+});
+
+formBtn.addEventListener("click", function (e) {
+  // kolorowanie radio inputów
+  if (inputPan.checked === false && inputPani.checked === false) {
+    radioDiv.classList.add("error_input");
+  }
+
+  //kolorowanie pól formularzy tekstowych
+  dataInputs.forEach((input) => {
+    if (input.value === "") {
+      input.classList.add("error_input");
+    }
+  });
+
+  if (
+    (inputPan.checked || inputPani.checked) &&
+    dataInputs[0].value !== "" &&
+    dataInputs[1].value !== "" &&
+    dataInputs[2].value !== "" &&
+    dataInputs[3].value !== ""
+  ) {
+    e.preventDefault();
+
+    dataInputs.forEach((item) => (item.value = ""));
+    radioInput.forEach((item) => (item.checked = ""));
+    containerFormThx.classList.remove("hidden");
+  }
 });
 
 thxBtn.addEventListener("click", function (e) {
